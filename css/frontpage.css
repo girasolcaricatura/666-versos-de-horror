@@ -8,6 +8,10 @@ header {
     border-radius: 9px;
 }
 header h1 {
-    text-align: center;
     color: red;
 }
+html {
+    cursor: url(../imgs/ezgif-2-efbd580e06.gif), auto;
+    height: 100px;
+}
+
