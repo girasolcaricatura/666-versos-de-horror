@@ -1,17 +1,38 @@
 * {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: aquamarine;
+}
+@font-face {
+    font-family: ToughHorror;
+    src: url(../imgs/ToughHorror.ttf) format('truetype');
 }
 header {
     display: flex;
-    border: solid 2px red;
+    justify-content: center;
     border-radius: 9px;
+    color: #fff;
 }
-header h1 {
-    color: red;
+h1 {
+font-family: ToughHorror;
+font-size: 80px;
+
 }
-html {
-    cursor: url(../imgs/ezgif-2-efbd580e06.gif), auto;
-    height: 100px;
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #0bbb21;
+/*     cursor: url(frame1.gif), auto;
+    animation: cursor 1s linear infinite; */
 }
+/* @keyframes cursor{
+    0% { 
+        cursor: url(frame1.gif), auto;
+    }
+    50% { a
+        cursor: url(frame2.gif), auto;
+    }
+    100% { 
+        cursor: url(frame3.gif), auto;
+    }
+} */
 
