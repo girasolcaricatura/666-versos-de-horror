@@ -7,6 +7,7 @@
     <title>666 versos de horror</title>
     <link rel="stylesheet" href="../css/frontpage.css">
     <script src="../js/frontpage.js"></script>
+    
 </head>
 <body>
     <header>
@@ -15,12 +16,37 @@
     </section>
     </header>
     <main>
-        <section class="explain">
+        <section class="randompoems">
             <div class="box">
-              <!--   <p class="text-inside">DISRUTA UN HAIKU</p> -->
-            </div>
+            <p id="poemDisplay"></p>
+            <button id="myButton">Ver Poema</button>
+        </div>
         </section>
-        <section class="magic"></section>
+        <script>
+            const poems = [
+            "Una abertura<br>asoma en su cuello un<br>Tornado jazmín.",
+  "Mi mamá está<br>En la mesa, ella es<br>Nuestro platillo.",
+  "Un libro negro<br>Asoma sus páginas<br>Rotas, malditas.",
+  "Es preferible<br>Leer la descripción<br>De un cadáver.",
+  "Última hora<br>Un perrito juega con<br>Una cabeza.",
+  "Como la sombra<br>Que arrulla a los niños en<br>Cajas de piedra.",
+  "Sin globo ocular<br>Sueña el esqueleto con<br>La impuntualidad.",
+  "El esqueleto<br>Recuerda aquella cita<br>Inconsolable.",
+  "Podría ver cien<br>Maneras de morir en<br>Mi propia casa.",
+  "Anticoncepción<br>Rosemary observa<br>Llorando los ojos de<br>Su propio hijo.",
+  "Un rayo de luz<br>Hierve la blanca carne<br>De Nosferatu.",
+  "En el librero<br>Quemado un libro de<br>Francisco Tario.",
+  "En el librero<br>Extraño, un libro de<br>Francisco Tario."
+            ];
+            
+            const poemButton = document.querySelector("#myButton");
+            const poemDisplay = document.querySelector("#poemDisplay");
+            
+            poemButton.addEventListener("click", function () {
+            const randomPoem = poems[Math.floor(Math.random() * poems.length)];
+            poemDisplay.innerHTML = randomPoem;
+            });
+            </script>
     </main>
     <footer></footer>
 </body>

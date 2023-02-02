@@ -20,19 +20,23 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    background-color: #0bbb21;
-/*     cursor: url(frame1.gif), auto;
-    animation: cursor 1s linear infinite; */
+    background-image: url(../imgs/fondo.jpg);
+} 
+
+main .randompoems {
+    display: flex;
+    color: #fff;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    justify-content: center;
 }
-/* @keyframes cursor{
-    0% { 
-        cursor: url(frame1.gif), auto;
-    }
-    50% { a
-        cursor: url(frame2.gif), auto;
-    }
-    100% { 
-        cursor: url(frame3.gif), auto;
-    }
-} */
+
+.randompoems .box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    height: 200px;
+}
 
